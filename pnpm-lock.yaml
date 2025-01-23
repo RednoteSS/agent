@@ -11,6 +11,9 @@ importers:
 
   .:
     dependencies:
+      '@cxp-13/redinote-rule-check':
+        specifier: file:./packages/plugin-rednote-rule-check
+        version: file:packages/plugin-rednote-rule-check(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.73.0(zod@3.23.8)))(@types/node@22.10.5)(axios@1.7.9)(bufferutil@4.0.9)(fastestsmallesttextencoderdecoder@1.0.22)(form-data@4.0.1)(jsdom@25.0.1(bufferutil@4.0.9)(canvas@2.11.2)(utf-8-validate@5.0.10))(postcss@8.4.49)(react@19.0.0)(rollup@4.29.2)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(typescript@5.6.3)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(yaml@2.7.0)
       '@elizaos/adapter-postgres':
         specifier: 0.1.7
         version: 0.1.7(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(react@19.0.0)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(vue@3.5.13(typescript@5.6.3))
@@ -525,6 +528,12 @@ packages:
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
     engines: {node: '>=12'}
+
+  '@cxp-13/redinote-rule-check@file:packages/plugin-rednote-rule-check':
+    resolution: {directory: packages/plugin-rednote-rule-check, type: directory}
+    peerDependencies:
+      form-data: 4.0.1
+      whatwg-url: 7.1.0
 
   '@derhuerst/http-basic@8.2.4':
     resolution: {integrity: sha512-F9rL9k9Xjf5blCz8HsJRO4diy111cayL2vkY2XE4r4t3n0yPXVYy3KD3nJ1qbrSn9743UWSXH4IwuCa/HWlGFw==}
@@ -6037,6 +6046,10 @@ packages:
     resolution: {integrity: sha512-d0z310fCWv5dJwnX1Y/MncBAqGMKEzlBb1AOf7z9K8ALnd0utBX/msg/fA0+sbyN1ihbMsLhrBlnl1ak7Wa0rg==}
     hasBin: true
 
+  uuid@11.0.5:
+    resolution: {integrity: sha512-508e6IcKLrhxKdBbcA2b4KQZlLVp2+J5UwQ6F7Drckkc5N9ZJwFa4TgWtsww9UG8fGHbm6gbV19TdM5pQ4GaIA==}
+    hasBin: true
+
   uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
     deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
@@ -7350,6 +7363,69 @@ snapshots:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
 
+  '@cxp-13/redinote-rule-check@file:packages/plugin-rednote-rule-check(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.73.0(zod@3.23.8)))(@types/node@22.10.5)(axios@1.7.9)(bufferutil@4.0.9)(fastestsmallesttextencoderdecoder@1.0.22)(form-data@4.0.1)(jsdom@25.0.1(bufferutil@4.0.9)(canvas@2.11.2)(utf-8-validate@5.0.10))(postcss@8.4.49)(react@19.0.0)(rollup@4.29.2)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(typescript@5.6.3)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(yaml@2.7.0)':
+    dependencies:
+      '@elizaos/core': 0.1.7(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(react@19.0.0)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(vue@3.5.13(typescript@5.6.3))
+      '@elizaos/plugin-tee': 0.1.7(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(bufferutil@4.0.9)(fastestsmallesttextencoderdecoder@1.0.22)(postcss@8.4.49)(react@19.0.0)(rollup@4.29.2)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(typescript@5.6.3)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(yaml@2.7.0)(zod@3.24.1)
+      '@elizaos/plugin-trustdb': 0.1.7(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.73.0(zod@3.23.8)))(@types/node@22.10.5)(axios@1.7.9)(jsdom@25.0.1(bufferutil@4.0.9)(canvas@2.11.2)(utf-8-validate@5.0.10))(postcss@8.4.49)(react@19.0.0)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(yaml@2.7.0)
+      bignumber: 1.1.0
+      bignumber.js: 9.1.2
+      bs58: 6.0.0
+      dotenv: 16.4.7
+      form-data: 4.0.1
+      node-cache: 5.1.2
+      tsup: 8.3.5(postcss@8.4.49)(typescript@5.6.3)(yaml@2.7.0)
+      uuid: 11.0.5
+      whatwg-url: 14.1.0
+      zod: 3.24.1
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@google-cloud/vertexai'
+      - '@langchain/anthropic'
+      - '@langchain/aws'
+      - '@langchain/cohere'
+      - '@langchain/core'
+      - '@langchain/google-genai'
+      - '@langchain/google-vertexai'
+      - '@langchain/groq'
+      - '@langchain/mistralai'
+      - '@langchain/ollama'
+      - '@microsoft/api-extractor'
+      - '@swc/core'
+      - '@types/node'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - axios
+      - bufferutil
+      - cheerio
+      - encoding
+      - fastestsmallesttextencoderdecoder
+      - happy-dom
+      - jiti
+      - jsdom
+      - less
+      - lightningcss
+      - msw
+      - peggy
+      - postcss
+      - react
+      - rollup
+      - sass
+      - sass-embedded
+      - solid-js
+      - sswr
+      - stylus
+      - sugarss
+      - supports-color
+      - svelte
+      - terser
+      - tsx
+      - typeorm
+      - typescript
+      - utf-8-validate
+      - vue
+      - yaml
+
   '@derhuerst/http-basic@8.2.4':
     dependencies:
       caseless: 0.12.0
@@ -8126,6 +8202,54 @@ snapshots:
       - yaml
       - zod
 
+  '@elizaos/plugin-tee@0.1.7(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(bufferutil@4.0.9)(fastestsmallesttextencoderdecoder@1.0.22)(postcss@8.4.49)(react@19.0.0)(rollup@4.29.2)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(typescript@5.6.3)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(yaml@2.7.0)(zod@3.24.1)':
+    dependencies:
+      '@elizaos/core': 0.1.7(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(react@19.0.0)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(vue@3.5.13(typescript@5.6.3))
+      '@phala/dstack-sdk': 0.1.6(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.24.1)
+      '@solana/spl-token': 0.4.9(@solana/web3.js@1.95.8(bufferutil@4.0.9)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.6.3)(utf-8-validate@5.0.10)
+      '@solana/web3.js': 1.95.8(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+      bignumber: 1.1.0
+      bignumber.js: 9.1.2
+      bs58: 6.0.0
+      node-cache: 5.1.2
+      pumpdotfun-sdk: 1.3.2(bufferutil@4.0.9)(fastestsmallesttextencoderdecoder@1.0.22)(rollup@4.29.2)(typescript@5.6.3)(utf-8-validate@5.0.10)
+      tsup: 8.3.5(postcss@8.4.49)(typescript@5.6.3)(yaml@2.7.0)
+      whatwg-url: 14.1.0
+    transitivePeerDependencies:
+      - '@google-cloud/vertexai'
+      - '@langchain/anthropic'
+      - '@langchain/aws'
+      - '@langchain/cohere'
+      - '@langchain/core'
+      - '@langchain/google-genai'
+      - '@langchain/google-vertexai'
+      - '@langchain/groq'
+      - '@langchain/mistralai'
+      - '@langchain/ollama'
+      - '@microsoft/api-extractor'
+      - '@swc/core'
+      - axios
+      - bufferutil
+      - cheerio
+      - encoding
+      - fastestsmallesttextencoderdecoder
+      - jiti
+      - peggy
+      - postcss
+      - react
+      - rollup
+      - solid-js
+      - sswr
+      - supports-color
+      - svelte
+      - tsx
+      - typeorm
+      - typescript
+      - utf-8-validate
+      - vue
+      - yaml
+      - zod
+
   '@elizaos/plugin-trustdb@0.1.7(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.73.0(zod@3.23.8)))(@types/node@22.10.5)(axios@1.7.9)(jsdom@25.0.1(bufferutil@4.0.9)(canvas@2.11.2)(utf-8-validate@5.0.10))(postcss@8.4.49)(react@19.0.0)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(yaml@2.7.0)':
     dependencies:
       '@elizaos/core': 0.1.7(@google-cloud/vertexai@1.9.2)(@langchain/core@0.3.27(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(react@19.0.0)(sswr@2.1.0(svelte@5.16.2))(svelte@5.16.2)(vue@3.5.13(typescript@5.6.3))
@@ -8787,6 +8911,15 @@ snapshots:
   '@phala/dstack-sdk@0.1.6(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.23.8)':
     optionalDependencies:
       viem: 2.22.2(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.23.8)
+    transitivePeerDependencies:
+      - bufferutil
+      - typescript
+      - utf-8-validate
+      - zod
+
+  '@phala/dstack-sdk@0.1.6(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.24.1)':
+    optionalDependencies:
+      viem: 2.22.2(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.24.1)
     transitivePeerDependencies:
       - bufferutil
       - typescript
@@ -9961,6 +10094,12 @@ snapshots:
     optionalDependencies:
       typescript: 5.6.3
       zod: 3.23.8
+    optional: true
+
+  abitype@1.0.7(typescript@5.6.3)(zod@3.24.1):
+    optionalDependencies:
+      typescript: 5.6.3
+      zod: 3.24.1
     optional: true
 
   abort-controller@3.0.0:
@@ -12578,11 +12717,26 @@ snapshots:
   ox@0.6.0(typescript@5.6.3)(zod@3.23.8):
     dependencies:
       '@adraffy/ens-normalize': 1.11.0
-      '@noble/curves': 1.7.0
-      '@noble/hashes': 1.6.1
+      '@noble/curves': 1.8.0
+      '@noble/hashes': 1.7.0
       '@scure/bip32': 1.6.0
       '@scure/bip39': 1.5.0
       abitype: 1.0.7(typescript@5.6.3)(zod@3.23.8)
+      eventemitter3: 5.0.1
+    optionalDependencies:
+      typescript: 5.6.3
+    transitivePeerDependencies:
+      - zod
+    optional: true
+
+  ox@0.6.0(typescript@5.6.3)(zod@3.24.1):
+    dependencies:
+      '@adraffy/ens-normalize': 1.11.0
+      '@noble/curves': 1.8.0
+      '@noble/hashes': 1.7.0
+      '@scure/bip32': 1.6.0
+      '@scure/bip39': 1.5.0
+      abitype: 1.0.7(typescript@5.6.3)(zod@3.24.1)
       eventemitter3: 5.0.1
     optionalDependencies:
       typescript: 5.6.3
@@ -14097,6 +14251,8 @@ snapshots:
 
   uuid@11.0.3: {}
 
+  uuid@11.0.5: {}
+
   uuid@3.4.0: {}
 
   uuid@8.3.2: {}
@@ -14129,6 +14285,25 @@ snapshots:
       abitype: 1.0.7(typescript@5.6.3)(zod@3.23.8)
       isows: 1.0.6(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
       ox: 0.6.0(typescript@5.6.3)(zod@3.23.8)
+      webauthn-p256: 0.0.10
+      ws: 8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
+    optionalDependencies:
+      typescript: 5.6.3
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+      - zod
+    optional: true
+
+  viem@2.22.2(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10)(zod@3.24.1):
+    dependencies:
+      '@noble/curves': 1.7.0
+      '@noble/hashes': 1.6.1
+      '@scure/bip32': 1.6.0
+      '@scure/bip39': 1.5.0
+      abitype: 1.0.7(typescript@5.6.3)(zod@3.24.1)
+      isows: 1.0.6(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
+      ox: 0.6.0(typescript@5.6.3)(zod@3.24.1)
       webauthn-p256: 0.0.10
       ws: 8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
     optionalDependencies:
@@ -14298,8 +14473,8 @@ snapshots:
 
   webauthn-p256@0.0.10:
     dependencies:
-      '@noble/curves': 1.7.0
-      '@noble/hashes': 1.6.1
+      '@noble/curves': 1.8.0
+      '@noble/hashes': 1.7.0
     optional: true
 
   webidl-conversions@3.0.1: {}
